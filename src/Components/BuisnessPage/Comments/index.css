@@ -1,0 +1,18 @@
+.comment-box {
+  display: flex;
+  flex-direction: column;
+}
+.comments-show {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 16px;
+}
+.comment-name {
+  margin: 16px;
+}
+
+.comment {
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  padding: 5px;
+}

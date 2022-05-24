@@ -1,12 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import LandingPage from './Components/LandingPage';
-import './App.css';
+import React from "react";
+import LandingPage from "./Components/LandingPage";
+import "./App.css";
+import BuisnessPage from "./Components/BuisnessPage";
 
 function App() {
   return (
     <div className="App">
       <LandingPage />
+      <BuisnessPage />
     </div>
   );
 }
