@@ -8,18 +8,24 @@ import {SignUp} from "../../sign-up";
 import {Form, FormControl} from "react-bootstrap";
 import Button from "@mui/material/Button";
 import {VerificationComponent} from "../../verification-component";
+import {useNavigate} from "react-router-dom";
 
 const LandingPage = () => {
     const [showValues, setShowValues] = React.useState(false);
+    let history = useNavigate();
+
+    function handleClick() {
+        history("/business");
+    }
 
     return (<>
         <div className="top-bar">
             <SearchBar/>
-            <Button variant="contained" onClick={() => {}}> עמוד עסק</Button>
+            <Button variant="contained" onClick={() => {
+                handleClick()}}> עמוד עסק</Button>
             <SignIn/>
             <SignUp/>
             <Button variant="contained"> Feeling Lucky</Button>
-
         </div>
         <Form className={"sign-up-form"}>
             <Form.Group className="mb-3 email-form form-item" controlId="formBasicEmail">

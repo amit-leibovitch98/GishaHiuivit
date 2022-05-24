@@ -26,7 +26,6 @@ const TextRating = (props) => {
         alignItems: "center",
       }}
     >
-      <p> דירוג לפי {props.numOfComments} תגובות </p>
       <Rating
         name="text-feedback"
         value={props.value}
@@ -34,7 +33,8 @@ const TextRating = (props) => {
         precision={0.5}
         emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
       />
-      <Box sx={{ ml: 2 }}>{labels[props.value]}</Box>
+        <p> דירוג לפי {props.numOfComments} תגובות </p>
+        <Box sx={{ ml: 2 }}>{labels[props.value]}</Box>
     </Box>
   );
 };

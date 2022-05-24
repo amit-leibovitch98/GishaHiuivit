@@ -2,9 +2,8 @@ import React, { Fragment, useState } from "react";
 import Map from "./Map";
 import Comments from "./Comments";
 import "./index.css";
-import SearchBar from "../LandingPage/SearchBar";
-import {SignIn} from "../../sign-in";
-import {SignUp} from "../../sign-up";
+import TopBar from '../top-bar';
+
 const BuisnessPage = () => {
   const [grade, setGrade] = useState(0);
   const [numOfComments, setNumOfComments] = useState(0);
@@ -16,13 +15,6 @@ const BuisnessPage = () => {
   };
   return (
     <Fragment>
-      <div className="top-bar">
-        <Button variant="contained"> עמוד עסק</Button>
-        <SearchBar/>
-        <SignIn/>
-        <SignUp/>
-        <Button variant="contained"> הפתע אותי</Button>
-      </div>
       <div className="buisness-flex ">
         <Map numOfComments={numOfComments + 1} grade={grade} />
         <Comments
