@@ -25,7 +25,7 @@ const LandingPage = () => {
                 handleClick()}}> עמוד עסק</Button>
             <SignIn/>
             <SignUp/>
-            <Button variant="contained"> Feeling Lucky</Button>
+            {/*<Button variant="contained"> Feeling Lucky</Button>*/}
         </div>
         <Form className={"sign-up-form"}>
             <Form.Group className="mb-3 email-form form-item" controlId="formBasicEmail">

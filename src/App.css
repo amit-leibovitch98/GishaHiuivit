@@ -22,6 +22,7 @@
 height: 20px;
 }
 
+
 .SearchBar input{
   height: 8px;
 }
@@ -153,4 +154,11 @@ form{
   justify-content: flex-start;
   align-items: flex-end;
   flex-direction: column;
+}
+
+@media only screen
+and (min-device-width: 200px)
+and (max-device-width: 500px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
 }

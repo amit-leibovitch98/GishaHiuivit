@@ -21,7 +21,7 @@ export const SignIn = () => {
     return (
         <div className={"sign-in-container"}>
             <Button aria-describedby={id} variant="contained" onClick={handleClick}>
-                התחברות לבעל עסק
+                התחברות עסק
             </Button>
             <Popover
                 className={"popover-signin"}

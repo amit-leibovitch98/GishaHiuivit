@@ -8,7 +8,7 @@ export const SignUp = () => {
     return (
         <div className={"sign-up-container"}>
             <Button variant="contained" onClick={() => {}}>
-                הרשמה לבעל עסק
+                הרשמת עסק
             </Button>
         </div>
     );
