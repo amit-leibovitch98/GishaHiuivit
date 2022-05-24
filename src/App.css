@@ -18,8 +18,7 @@
 .SearchBar{
   top:0;
   left:0;
-
-  display: flex;
+  display: flex !important;
 height: 20px;
 }
 
