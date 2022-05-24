@@ -15,6 +15,7 @@ const LandingPage = () => {
     return (<>
         <div className="top-bar">
             <SearchBar/>
+            <Button variant="contained" onClick={() => {}}> עמוד עסק</Button>
             <SignIn/>
             <SignUp/>
             <Button variant="contained"> Feeling Lucky</Button>
