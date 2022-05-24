@@ -22,7 +22,7 @@ const LandingPage = () => {
         <div className="top-bar">
             <SearchBar/>
             <Button variant="contained" onClick={() => {
-                handleClick()}}> עמוד עסק</Button>
+                handleClick()}}>עסק שלי</Button>
             <SignIn/>
             <SignUp/>
             {/*<Button variant="contained"> Feeling Lucky</Button>*/}
