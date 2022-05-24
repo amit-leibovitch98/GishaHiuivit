@@ -7,15 +7,21 @@ import LandingPage from './Components/LandingPage';
 //     Route,
 //     Link
 // } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Route, Routes
+} from "react-router-dom";
 
 import './App.css';
 function App() {
-  // @ts-ignore
-    return (
-        <div className="App">
-        <LandingPage />
-    </div>
-
+    // @ts-ignore
+    // @ts-ignore
+    return (<Router>
+            <Routes>
+                <Route path="/" element={<LandingPage/>}/>
+                <Route path="/search" element={<LandingPage/>}/>
+            </Routes>
+        </Router>
     );
 }
 
